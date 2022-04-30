@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="117dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/btn_lgn"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#E798F4"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="228dp"
+        android:autofillHints="@string/usr_nm"
+        android:backgroundTint="#9C27B0"
+        android:hint="@string/usr_nm"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#E798F4"
+        android:textColorHint="#9C27B0"
+        android:textColorLink="#E798F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="@string/pwd"
+        android:backgroundTint="#9C27B0"
+        android:hint="@string/pwd"
+        android:textColor="#9C27B0"
+        android:textColorHighlight="#E798F4"
+        android:textColorHint="#9C27B0"
+        android:textColorLink="#E798F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:ignore="TextFields,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/btn_lgn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
